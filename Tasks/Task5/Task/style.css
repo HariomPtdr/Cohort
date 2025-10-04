@@ -95,6 +95,7 @@ html,body {
     color: #0177ED;
     border-width: 1px;
     border-style: groove;
+    cursor: pointer;
     
     
 }
@@ -109,6 +110,7 @@ html,body {
     background-image: url(./hero_iphone_air_.jpg);
 }
 #new{
+    /* flex-wrap: wrap; */
     display: flex;
     margin: 10px;
     gap: 10px;
