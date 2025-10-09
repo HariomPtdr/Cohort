@@ -20,7 +20,7 @@ html,body{
 .profile{
     height: 400px;
     width: 250px;
-    background-color: white;
+    background-color: rgb(123, 136, 123);
     border-radius: 10px;
     box-shadow: 5px 10px 25px rgba(51, 49, 49, 0.22);
     padding: 20px;
