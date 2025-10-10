@@ -1,9 +1,107 @@
-.box{
-    height: 200px;
-    width: 100px;
-    background-color: red;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.box:nth-child(2){
-    background-color: brown;
+body, html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #b3e0cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 1fr 0.001fr;
+    gap: 1.4rem;
+    padding: 2rem;
+    overflow: hidden;
+    box-shadow: 5px 10px 25px rgba(51, 49, 49, 0.22);
+    border-radius: 1rem;
+    grid-template-areas: 
+        "header"
+        "section"
+        "footer" ;
+}
+header{
+    background-color: #ffffff;
+    grid-area: header;
+    display: flex;
+    align-items: top;
+    justify-content:space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 6rem;
+    
+
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+header span{
+    font-size: 1.5rem;
+}
+section{
+    grid-area: section;
+    overflow: hidden;
+    background-image: url(./Screenshot\ 2025-10-10\ at\ 1.25.12\ PM.png);
+    background-image: Transparent ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.hh{
+    color: #17615C;
+    padding-top: 50px;
+    margin-left: 100px;
+    font-size: 3rem;
+}
+.h{
+    color: rgb(130, 205, 196);
+    margin-left: 100px;
+    font-size: 3rem;
+}
+section p{
+    width: 65%;
+    margin-top: 20px;
+    margin-left: 100px;
+
+}
+section button{
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 8px 25px;
+    font-size: 1rem;
+    background-color: #246460;
+    color: white;
+    border: none;
+   border-radius: 5px;
+
+}
+section button:hover{
+    color:  #246460;
+    background-color: rgb(69, 172, 155);
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    color:  #246460;
+    justify-content: center;
+    gap: 3rem;
+    cursor: pointer;
 }
